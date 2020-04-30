@@ -1,0 +1,143 @@
+/* image slide field */
+.img_slide_area {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  clear: top;
+  overflow: auto;
+}
+
+.img_slide_fade {
+  width: 100%;
+  height: 440px;
+  margin: auto 0;
+}
+
+.slide_arrow {
+  font-size: 100px;
+  display: inline-block;
+  background-color: #585858be;
+  padding: 0 15px;
+  text-align: center;
+  width: 30px;
+  opacity: 0.7;
+  color: white;
+}
+
+#left_arrow {
+  float: left;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+
+#right_arrow {
+  float: right;
+  position: absolute;
+  top: 30%;
+  right: 3%;
+}
+
+.slide_arrow:hover {
+  background-color: #3f3e3e;
+}
+
+/* group field */
+.group {
+  position: relative;
+  border-top: 1px solid #d8d8d8;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.group > .group_header_area {
+  top: -40px;
+}
+
+.group_header_area {
+  position: relative;
+  text-align: center;
+  overflow: auto;
+}
+
+.group_header {
+  display: inline-block;
+  font-size: 34px;
+  font-weight: bold;
+  background-color: white;
+  padding: 0 20px;
+}
+
+/* today field*/
+.group_today_area {
+  text-align: center;
+}
+.group_today_area div {
+  display: inline-flex;
+  margin: 5px;
+}
+
+#calender {
+  width: 600px;
+  height: 250px;
+  background-color: greenyellow;
+}
+
+#plan {
+  width: 600px;
+  height: 250px;
+  background-color: greenyellow;
+}
+
+/* notice field*/
+.group_notice_area {
+  text-align: center;
+}
+
+#group_notice_area img {
+  display: inline-flex;
+  width: 200px;
+  height: 300px;
+  margin: 10px 100px;
+}
+
+/* review field*/
+.group_review_area {
+  text-align: center;
+}
+
+.review_contents {
+  position: relative;
+  display: inline-flex;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #d8d8d8;
+  margin: 0 20px;
+}
+
+#review_left_arrow {
+  float: left;
+  position: absolute;
+  top: 40%;
+  left: 6%;
+}
+
+#review_right_arrow {
+  float: right;
+  position: absolute;
+  top: 40%;
+  right: 6%;
+}
+
+/* network field*/
+.network {
+  display: inline-flex;
+  width: 150px;
+  height: 150px;
+  margin: 0 45px;
+}
+
+#group_network_area {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
