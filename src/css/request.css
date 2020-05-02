@@ -1,0 +1,147 @@
+.reqeust_header {
+  border-bottom: 1px solid #d8d8d8;
+  text-align: center;
+  padding: 25px;
+  color: #707070;
+}
+
+.reqeust_header h1 {
+  font-weight: bold;
+}
+
+.reqeust_header p {
+  font-size: 15px;
+}
+
+#request_submit {
+  width: 120px;
+  height: 45px;
+  border-radius: 40px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 6px;
+}
+
+.request_submenu {
+  height: 220px;
+  position: relative;
+  padding: 10px;
+}
+
+.submenu_region,
+.submenu_subject {
+  float: left;
+  width: 470px;
+  height: 230px;
+}
+
+.submenu_region h2,
+.submenu_subject h2 {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.submenu_region ul {
+  padding: 2px;
+}
+
+.submenu_region ul li,
+.submenu_subject ul li {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 15px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+}
+
+.submenu_region {
+  position: absolute;
+  top: 7%;
+  left: 12%;
+}
+
+.submenu_region ul li:hover,
+.submenu_subject ul li:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submenu_subject {
+  position: absolute;
+  top: 7%;
+  right: 6%;
+}
+
+.submenu_subject ul {
+  padding: 2px;
+}
+
+/* .submenu_subject ul li {
+  float: left;
+  list-style: none;
+  margin-right: 15px;
+} */
+
+.submenu_down_area {
+  position: relative;
+  padding: 20px;
+}
+
+.submenu_down::after {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 10%;
+  left: 49%;
+  display: "block";
+  content: "";
+  border: solid #707070;
+  border-width: 0 2px 2px 0;
+  transform: rotate(42deg);
+  /* transform: rotate(-138deg); */
+  cursor: pointer;
+  margin-top: 19px;
+}
+
+.request_contents {
+  margin-top: 60px;
+}
+
+.request_contents_layout {
+  border: 2px solid #d8d8d8;
+  border-radius: 20px;
+  width: 55%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.request_contents_layout_header {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 15px;
+}
+.request_contents_layout_header span {
+  float: right;
+  margin-top: 7px;
+}
+.tag {
+  display: inline-block;
+  width: 60px;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.environment_tag {
+  background-color: rgb(131, 201, 131);
+}
+
+.region_tag {
+  background-color: rgb(204, 204, 204);
+}
+
+.request_contents_layout_contents {
+  padding-left: 24px;
+  padding-top: 15px;
+}
