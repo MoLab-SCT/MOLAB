@@ -7,10 +7,9 @@ html {
 }
 
 .header_top {
-  padding: 60px 0 60px;
+  padding: 60px 0 30px;
   position: relative;
-  overflow: auto;
-  height: 167px;
+  height: 140px;
 }
 
 .wide_max_width_area {
@@ -44,7 +43,6 @@ nav {
   position: absolute;
   top: 65px;
   right: 20px;
-  overflow: auto;
   float: right;
   font-weight: bold;
 }
@@ -63,11 +61,97 @@ nav button {
   height: 22px;
 }
 
-nav ul li {
+.menu_item {
   list-style: none;
   float: left;
   margin-right: 35px;
+  cursor: pointer;
+  padding: 2px;
+  position: relative;
 }
+
+.menu_item a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu_header {
+  height: 55px;
+  padding: 5px;
+}
+
+.menu_header:hover {
+  animation-duration: 1ms;
+  -webkit-transition: 1s ease;
+  transition: 0.3s ease;
+  color: #84cde5;
+  border-top: 2px solid #84cde5;
+}
+
+.sub_menu_list {
+  width: 150px;
+  overflow: auto;
+  font-weight: lighter;
+  color: black;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  display: none;
+  padding: 0;
+  border-top: 2px solid #84cde5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  list-style: none;
+}
+
+.category {
+  width: 440px;
+  height: 160px;
+  right: 0;
+  display: none;
+  padding: 28px 0 22px;
+}
+
+.category_region {
+  padding: 25px 0 20px;
+}
+
+.category_region li {
+  float: left;
+  width: 30%;
+  list-style: none;
+  padding: 3px;
+  text-align: right;
+}
+
+.category p {
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  margin-right: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sub_menu_list li:hover {
+  background-color: hsl(195, 65%, 71%, 0.5);
+  animation-duration: 1ms;
+  -webkit-transition: 1s ease;
+  transition: 0.3s ease;
+}
+
+.activity li {
+  padding: 13px;
+  border-bottom: 0.5px solid #d8d8d8;
+}
+
+.sub_menu_list li a {
+  z-index: 1;
+}
+
+.menu_item:hover > .sub_menu_list {
+  display: block;
+}
+
 footer {
   height: 150px;
   background-color: #707070;

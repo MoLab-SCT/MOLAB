@@ -14,32 +14,53 @@
 }
 
 .slide_arrow {
-  font-size: 100px;
+  width: 65px;
+  height: 100px;
   display: inline-block;
-  background-color: #585858be;
-  padding: 0 15px;
+  background-color: hsla(0, 0%, 0%, 0.5);
   text-align: center;
-  width: 30px;
-  opacity: 0.7;
   color: white;
+  text-align: center;
+  cursor: pointer;
 }
 
-#left_arrow {
+.slide_arrow::after {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 40%;
+  display: "block";
+  content: "";
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+}
+
+#slide_left_arrow {
   float: left;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 3%;
 }
 
-#right_arrow {
+#slide_right_arrow {
   float: right;
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 3%;
 }
 
+#slide_left_arrow::after {
+  transform: rotate(135deg);
+  left: 26px;
+}
+
+#slide_right_arrow::after {
+  transform: rotate(-45deg);
+  right: 26px;
+}
+
 .slide_arrow:hover {
-  background-color: #3f3e3e;
+  background-color: hsla(0, 0%, 0%, 0.7);
 }
 
 /* group field */
@@ -127,6 +148,16 @@
   position: absolute;
   top: 40%;
   right: 6%;
+}
+
+#review_left_arrow::after {
+  transform: rotate(135deg);
+  left: 26px;
+}
+
+#review_right_arrow::after {
+  transform: rotate(-45deg);
+  right: 26px;
 }
 
 /* network field*/
