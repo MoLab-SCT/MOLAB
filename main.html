@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" , chrom="1" />
-    <!-- <meta name="viewport" content="width=device-width" /> -->
+    <meta name="viewport" content="width=device-width">
     <title>Molab | 모두의 리빙랩</title>
     <link rel="stylesheet" href="src/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="public/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="public/slick/slick-theme.css"/>
     <link rel="stylesheet" href="src/css/main.css" />
-    <script type="text/javascript" src="src/js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -23,7 +25,7 @@
             검색
           </button> -->
         </div>
-        <nav>
+        <nav class="header_nav">
           <ul>
             <li class="menu_item">
               <a href="#"><div class="menu_header">소개</div></a>
@@ -32,15 +34,15 @@
             <li class="menu_item">
               <a><div class="menu_header activity">활동</div></a>
                 <ul class="sub_menu_list activity">
-                  <li>
-                    <a>리빙랩 모아보기</a>
-                  </li>
-                  <li>
-                    <a>후기</a>
-                  </li>
-                  <li>
-                    <a href="./src/html/request.html">리퀘스트</a>
-                  </li>
+                  <a><li>
+                    리빙랩 모아보기
+                  </li></a>
+                  <a><li>
+                   후기
+                  </li></a>
+                  <a href="./src/html/request.html"><li>
+                    리퀘스트
+                  </li></a>
                 </ul>
             </li>
 
@@ -116,8 +118,88 @@
           <span class="group_header">Today's</span>
         </div>
         <div class="group_today_area">
-          <div id="calender">달력</div>
-          <div id="plan">계획</div>
+          <div class="calender_area">
+            <h3 class="calender_header"></h3>
+            <table class="calender">
+              <colgroup>
+                <col class="sun">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col class="sat">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">
+                    일
+                  </th>
+                  <th>
+                    월
+                  </th>
+                  <th>
+                    화
+                  </th>
+                  <th>
+                    수
+                  </th>
+                  <th>
+                    목
+                  </th>
+                  <th>
+                    금
+                  </th>
+                  <th scope="col">
+                    토
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="calender_tbody">
+              </tbody>
+            </table>
+        </div>
+
+          <div class="plan">
+            <nav>
+              <div class="nav_tabs">
+                <div class="nav_tab active" id="todayTab">
+                오늘의 event
+                </div>
+                <div class="nav_tab" id="tomorTab">
+                내일의 event
+                </div>
+              </div>
+            </nav>
+            <div class="tab_contents">
+              <div class="tab_event active"  id="todayEvent">
+                <h4>(Today) 스마트시티 시흥 리빙랩 그룹 모집</h4>
+                <img src="resources/img/event.PNG" alt="event"/>
+                <p>
+                  시흥시 리빙랩에서 함께 할 그룹을 모집합니다!
+                </p>
+                <div class="tab_tags">
+                  <span>#시흥시</span>
+                  <span>#스마트시티</span>
+                  <span>#그룹모집</span>
+                  <span>#시흥리빙랩</span>
+                </div>
+              </div>
+              <div class="tab_event"  id="tomorEvent">
+                <h4>(Tomorrow) 스마트시티 시흥 리빙랩 그룹 모집</h4>
+                <img src="resources/img/event.PNG" alt="event"/>
+                <p>
+                  시흥시 리빙랩에서 함께 할 그룹을 모집합니다!
+                </p>
+                <div class="tab_tags">
+                  <span>#시흥시</span>
+                  <span>#스마트시티</span>
+                  <span>#그룹모집</span>
+                  <span>#시흥리빙랩</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- notice area-->
@@ -126,9 +208,11 @@
           <span class="group_header">Notice</span>
         </div>
         <div id="group_notice_area">
-          <img src="resources/img/notice1.png" />
-          <img src="resources/img/notice1.png" />
-          <img src="resources/img/notice1.png" />
+          <div class="group_notice_images">
+            <img src="resources/img/notice1.png" />
+            <img src="resources/img/notice1.png" />
+            <img src="resources/img/notice1.png" />
+          </div>
         </div>
       </div>
       <!-- review area-->
@@ -136,14 +220,16 @@
         <div class="group_header_area">
           <span class="group_header">Review</span>
         </div>
-        <div class="group_review_area">
-          <span id="review_left_arrow" class="slide_arrow"></span>
-          <div class="review_contents">설명</div>
-          <div class="review_contents">설명</div>
-          <!-- <div class="review_contents">설명</div>
-          <div class="review_contents">설명</div> -->
-          <span id="review_right_arrow" class="slide_arrow"></span>
+        <div class= "group_review_area">
+          
+        
+        <div class="multiple-items">   
+          <div class="review_contents"><h3>Vote for Johnny Cashew @Kraak de Crisis</h3><p>Did you know that your cashew nuts travel 12.500 km more than is required before it hits the shelves in your supermarket? Johnny Cashew sources cashew nuts directly from Africa (Tanzania, to be precise). Our nuts…</p></div>
+          <div class="review_contents"><h3>Vote for Johnny Cashew @Kraak de Crisis</h3><p>Did you know that your cashew nuts travel 12.500 km more than is required before it hits the shelves in your supermarket? Johnny Cashew sources cashew nuts directly from Africa (Tanzania, to be precise). Our nuts…</p></div>
+          <div class="review_contents">설명3</div>
+          <div class="review_contents">설명4</div>
         </div>
+      </div>
       </div>
       <!-- network area-->
       <div class="group">
@@ -160,5 +246,10 @@
     <footer>
       creater / partner / developer
     </footer>
+    
+    <script type="text/javascript" src="src/js/main.js"></script>
+    <script type="text/javascript" src="src/js/calender.js"></script>
+    <script type="text/javascript" src="public/slick/slick.min.js"></script>
+
   </body>
 </html>

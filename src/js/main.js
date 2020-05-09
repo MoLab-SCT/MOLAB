@@ -46,7 +46,45 @@ function slideMove() {
   }
 }
 
+// function showPlan() {
+//   const tabs = document.querySelectorAll(".nav_tab");
+
+//   console.log(tabs);
+//   function check(x) {
+//     console.log(x);
+//   }
+// }
+
+jQuery(document).ready(function () {
+  $(".multiple-items").slick({
+    slide: "div",
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+  });
+
+  $(".slick-prev").click(function () {
+    $(".multiple-items").slick("slickPrev");
+  });
+
+  $(".nav_tab").click(function () {
+    if ($(this).is("#tomorTab")) {
+      $("#todayTab").removeClass("active");
+      $("#tomorTab").addClass("active");
+      $("#todayEvent").hide();
+      $("#tomorEvent").show();
+    } else {
+      $("#todayTab").addClass("active");
+      $("#tomorTab").removeClass("active");
+      $("#todayEvent").show();
+      $("#tomorEvent").hide();
+    }
+  });
+});
+
 window.onload = function () {
   slideShow();
   slideMove();
+  // showPlan();
 };

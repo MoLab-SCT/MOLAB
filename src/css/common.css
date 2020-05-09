@@ -9,7 +9,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  box-sizing: border-box;
 }
+
 header {
   border-bottom: 1px solid #d8d8d8;
 }
@@ -46,7 +48,7 @@ header {
   padding: 0 8px 0 22px;
 }
 
-nav {
+.header_nav {
   position: absolute;
   top: 65px;
   right: 10px;
@@ -54,13 +56,13 @@ nav {
   font-weight: bold;
 }
 
-nav ul,
-nav button {
+.header_nav ul,
+.header_nav button {
   float: left;
   margin: 0;
 }
 
-nav button {
+.header_nav button {
   border-style: none;
   background-color: black;
   color: white;
@@ -78,6 +80,8 @@ nav button {
   padding: 2px;
   position: relative;
 }
+/* 
+#menu li a:hover:before, .underline-hover:hover:before */
 
 .menu_item a {
   text-decoration: none;
@@ -85,17 +89,35 @@ nav button {
 }
 
 .menu_header {
-  height: 45px;
   padding: 5px;
+  height: 30px;
+  position: relative;
 }
 
-.menu_header:hover {
+.menu_header:before {
+  content: "";
+  height: 0.1em;
+  background-color: #707070;
+  display: block;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  transition: all 0.3s ease-out 0s;
+  z-index: -1;
+}
+
+.menu_header:hover:before {
+  width: 100%;
+}
+
+/* .menu_header:hover {
   animation-duration: 1ms;
   -webkit-transition: 1s ease;
   transition: 0.3s ease;
   color: #84cde5;
-  border-top: 2px solid #84cde5;
-}
+  border-bottom: 1px solid #84cde5;
+} */
 
 .sub_menu_list {
   width: 150px;
@@ -107,7 +129,7 @@ nav button {
   background-color: white;
   display: none;
   padding: 0;
-  border-top: 2px solid #84cde5;
+  /* border-top: 2px solid; */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   list-style: none;
 }
@@ -117,7 +139,7 @@ nav button {
   height: 160px;
   right: 0;
   display: none;
-  padding: 28px 0 22px;
+  padding: 32px 0 22px;
 }
 
 .category_region {
@@ -126,10 +148,14 @@ nav button {
 
 .category_region li {
   float: left;
-  width: 30%;
+  width: 31%;
   list-style: none;
-  padding: 3px;
   text-align: right;
+  padding: 2px;
+}
+
+.category_region li a {
+  padding: 3px;
 }
 
 .category p {
@@ -139,13 +165,11 @@ nav button {
   margin-right: 25px;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
-.sub_menu_list li:hover {
-  background-color: hsl(195, 65%, 71%, 0.5);
-  animation-duration: 1ms;
-  -webkit-transition: 1s ease;
-  transition: 0.3s ease;
+.category_region li a:hover {
+  background-color: rgba(184, 185, 185, 0.5);
 }
 
 .activity li {
@@ -153,6 +177,9 @@ nav button {
   border-bottom: 0.5px solid #d8d8d8;
 }
 
+.activity li:hover {
+  background-color: rgba(184, 185, 185, 0.5);
+}
 .sub_menu_list li a {
   z-index: 1;
 }
