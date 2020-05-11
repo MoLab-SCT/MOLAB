@@ -18,12 +18,10 @@
           <a href="./main.html"><img src="resources/img/logo.png" alt="MOLAB" /></a>
         </h1>
         <div class="search_area">
-          <input type="text" placeholder="Search.." name="Search" />
-          <!-- <button
-            type="submit"
-          >
-            검색
-          </button> -->
+          <form>
+            <input type="text" placeholder="Search.." name="Search" class="search_text"/>
+            <input type="submit" class="search_btn" value="검색" title="검색"/>
+        </form>
         </div>
         <nav class="header_nav">
           <ul>
@@ -37,7 +35,7 @@
                   <a><li>
                     리빙랩 모아보기
                   </li></a>
-                  <a><li>
+                  <a href="./src/html/review.html"><li>
                    후기
                   </li></a>
                   <a href="./src/html/request.html"><li>
@@ -89,6 +87,7 @@
         </nav>
     </header>
 
+    <main>
     <!-- image slider area-->
     <div class="img_slide_area">
       <span id="slide_left_arrow" class="slide_arrow"></span>
@@ -243,6 +242,7 @@
         </div>
       </div>
     </div>
+  </main>
     <footer>
       creater / partner / developer
     </footer>

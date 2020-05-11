@@ -40,12 +40,25 @@ header {
   left: 300px;
 }
 
-.search_area input {
+.search_text {
   width: 350px;
   height: 35px;
   border: 2px solid black;
   border-radius: 24px;
   padding: 0 8px 0 22px;
+}
+
+.search_btn {
+  background: url("../../resources/img/searchicon.PNG") no-repeat 4px 4px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-size: 33px;
+  position: absolute;
+  top: 0;
+  right: 11px;
+  box-sizing: border-box;
+  text-indent: -9999em;
 }
 
 .header_nav {
@@ -84,7 +97,7 @@ header {
 #menu li a:hover:before, .underline-hover:hover:before */
 
 .menu_item a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
 }
 
@@ -136,7 +149,7 @@ header {
 
 .category {
   width: 440px;
-  height: 160px;
+  height: 200px;
   right: 0;
   display: none;
   padding: 32px 0 22px;
@@ -156,6 +169,8 @@ header {
 
 .category_region li a {
   padding: 3px;
+  text-decoration: none;
+  color: black;
 }
 
 .category p {
@@ -170,6 +185,7 @@ header {
 
 .category_region li a:hover {
   background-color: rgba(184, 185, 185, 0.5);
+  color: black;
 }
 
 .activity li {
@@ -179,13 +195,19 @@ header {
 
 .activity li:hover {
   background-color: rgba(184, 185, 185, 0.5);
+  color: black;
 }
 .sub_menu_list li a {
   z-index: 1;
+  color: black;
+  text-decoration: none;
 }
 
-.menu_item:hover > .sub_menu_list {
+.menu_item:hover > .sub_menu_list,
+.menu_header {
   display: block;
+  text-decoration: none;
+  color: black;
 }
 
 footer {
