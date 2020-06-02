@@ -94,19 +94,16 @@
 /* today field*/
 
 .group_today_area {
-  overflow: auto;
   position: relative;
 }
 
 .calender_area {
-  float: left;
   margin: 4px;
   overflow: auto;
 }
 
 .calender_area {
   width: 49%;
-  margin: auto;
 }
 
 .calender {
@@ -116,7 +113,6 @@
 
 .calender_header {
   border-top: 1px solid #686869;
-  width: 605px;
 }
 
 .calender th,
@@ -139,9 +135,8 @@
 } */
 
 .plan {
-  width: 50%;
   position: absolute;
-  right: 5px;
+  right: 0;
   top: 50px;
 }
 
@@ -178,7 +173,6 @@
 
 .tab_contents {
   border: 1px solid #a1a1a1;
-  padding: 24px;
   height: 299px;
   position: relative;
 }
@@ -195,13 +189,13 @@
 .tab_event h4 {
   margin: 0;
   font-size: 25px;
-  padding-bottom: 10px;
+  padding: 10px;
   box-sizing: border-box;
   border-bottom: 0.5px solid #a1a1a1;
 }
 
 .tab_event p {
-  font-size: 25px;
+  font-size: 23px;
   padding: 12px;
   word-break: normal;
   width: 240px;
@@ -213,7 +207,7 @@
   width: 243px;
   height: auto;
   position: absolute;
-  right: 5%;
+  right: 3%;
   bottom: 12%;
   display: inline-block;
 }
@@ -228,9 +222,9 @@
 }
 
 .tab_event img {
-  width: 280px;
-  height: 230px;
-  margin: 18px 5px 10px 5px;
+  width: 250px;
+  height: 200px;
+  margin: 15px;
   box-shadow: -2px 2px 5px 2px #a1a1a1;
   float: left;
 }
