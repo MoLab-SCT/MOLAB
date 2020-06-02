@@ -1,0 +1,84 @@
+.events_header {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.events_header h1 {
+  margin: 30px 0px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.events_header p {
+  font-weight: bold;
+  color: #707070;
+  margin: 0;
+  font-size: 15px;
+}
+
+.search_events_area {
+  position: relative;
+  width: 400px;
+  margin: 40px auto;
+}
+
+.search_events_btn {
+  background: url("../../resources/img/searchicon.PNG") no-repeat 4px 4px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-size: 33px;
+  position: absolute;
+  top: 0;
+  right: 37px;
+  box-sizing: border-box;
+  text-indent: -9999em;
+}
+
+.events_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.event_list {
+  margin: 20px;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+}
+
+.event_thumb {
+  margin: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.event_thumb img {
+  width: 300px;
+  height: 300px;
+}
+
+.event_info {
+  height: 120px;
+}
+
+.event_info h3 {
+  width: 300px;
+  font-size: 15px;
+  padding: 12px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.event_info_span {
+  margin: 0 auto;
+  width: 300px;
+  padding: 12px;
+}
+
+.event_info span:last-child {
+  float: right;
+}
