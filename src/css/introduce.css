@@ -1,0 +1,94 @@
+.livingLab_concept:after {
+  clear: all;
+  display: block;
+  content: "";
+}
+
+.about::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.bi::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.part::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.introduce_header {
+  background-color: #041020;
+  height: 55px;
+  padding: 13px;
+  position: sticky;
+  top: 0px;
+}
+
+.introduce_header ul {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  overflow: auto;
+}
+
+.introduce_header ul li {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.intro_main {
+  margin-bottom: 150px;
+}
+
+.intro_main .livingLab_concept {
+  float: left;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.intro_main .about > h2 {
+  float: right;
+  padding-right: 130px;
+}
+
+.intro_main .about > p {
+  float: right;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 30px;
+}
+
+.intro_main .bi {
+  float: left;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 30px;
+}
+
+.intro_main .part {
+  padding: 30px 130px 30px 130px;
+}
+
+input[type="button"] {
+  width: 100px;
+  background-color: #041020;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px;
+  cursor: pointer;
+}

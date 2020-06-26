@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Molab | 모두의 리빙랩</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/network.css">
+    <script type="text/javascript" src="src/js/main.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('img').hover(function(){
+                $(this).css('border','2px solid')
+            });
+        });
+    </script>
+   <script src="src/js/jquery-3.5.1.min"></script>
+</head>
+<body>
+  <div id="container">
+    <!-- 상단바-->  
+
+    <header>
+      <div class="header_top wide_max_width_area">
+        <h1 class="logo_area">
+          <a href="../../main.html"><img src="../../resources/img/logo.png" alt="MOLAB" /></a>
+        </h1>
+        <div class="search_area">
+          <form>
+            <input type="text" placeholder="Search.." name="Search" class="search_text"/>
+            <input type="submit" class="search_btn" value="검색" title="검색"/>
+        </form>
+        </div>
+        <nav class="header_nav">
+          <ul>
+            <li class="menu_item">
+              <a href="#"><div class="menu_header">소개</div></a>
+            </li>
+
+            <li class="menu_item">
+              <a><div class="menu_header activity">활동</div></a>
+                <ul class="sub_menu_list activity">
+                  <a href="./src/html/showEvent.html"><li>
+                    리빙랩 모아보기
+                  </li></a>
+                  <a href="./src/html/review.html"><li>
+                   후기
+                  </li></a>
+                  <a href="./src/html/request.html"><li>
+                    리퀘스트
+                  </li></a>
+                </ul>
+            </li>
+
+            <li class="menu_item">
+              <a href="./src/html/network.html"><div class="menu_header">네트워크</div></a>
+            </li>
+            <li class="menu_item">
+              <a href="#"><div class="menu_header">카테고리</div></a>
+              <section class="sub_menu_list category">
+                <p>지역</p>
+                <ul class="category_region">
+                  <li>
+                    <a>서울</a>
+                  </li>
+                  <li>
+                    <a>인천/경기</a>
+                  </li>
+                  <li>
+                    <a>대전/충청/세종</a>
+                  </li>
+                  <li>
+                    <a>부산/울산/경남</a>
+                  </li>
+                  <li>
+                    <a>광주/전라</a>
+                  </li>
+                  <li>
+                    <a>대구/경북</a>
+                  </li>
+                  <li>
+                    <a>강원</a>
+                  </li>
+                  <li>
+                    <a>제주</a>
+                  </li>
+                  <li>
+                    <a>기타지역</a>
+                  </li>
+                </ul>
+               
+              </li>
+              <li class="login">
+                <a href="./src/html/login.html">로그인</a>
+              </li>
+              </section>
+          </ul> 
+        </nav>
+    </header>
+       <!-- 상단바1-->  
+       <div class="preface">
+        <h1>MOLAB의 협력사 알아보기</h1>
+        <p>MOLAB과 함께 일하는 협력사를 알고싶나요?<br>
+            진행 중인 프로젝트에 어떤 구성원이 있는지 알고싶나요<br>
+            MOLBA과 함께하는 구성원들을 자세히 알아보세요!<br>
+        </p>
+       </div>
+       <div class="main">
+        <div class="img-net">
+            <img onclick="location.href='http://sw.hanyang.ac.kr/'" onmouseover="mover()" id="id01"src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+        </div>
+        <div class="img-net2">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+        </div>
+        <div class="img-net3">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+            <img src="../../resources/img/hanyang.png" alt="네트워크 1">
+        </div>
+    </div>
+    <footer>
+      creater / partner / developer
+    </footer>
+  </div>
+</body>
+</html>
