@@ -1,142 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" , chrom="1" />
-    <!-- <meta name="viewport" content="width=device-width" /> -->
-    <title>Molab | 모두의 리빙랩</title>
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/request.css" />
-  </head>
-  <body>
-    <div id="container">
-      <header>
-        <div class="header_top wide_max_width_area">
-          <h1 class="logo_area">
-            <a href="../../main.html"><img src="../../resources/img/logo.png" alt="MOLAB" /></a>
-          </h1>
-          <div class="search_area">
-            <form>
-              <input type="text" placeholder="Search.." name="Search" class="search_text"/>
-              <input type="submit" class="search_btn" value="검색" title="검색"/>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" , chrom="1" />
+  <!-- <meta name="viewport" content="width=device-width" /> -->
+  <title>Molab | 모두의 리빙랩</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/request.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div class="header_top wide_max_width_area">
+        <h1 class="logo_area">
+          <a href="../../main.html"><img src="../../resources/img/logo.png" alt="MOLAB" /></a>
+        </h1>
+        <div class="search_area">
+          <form>
+            <input type="text" placeholder="Search.." name="Search" class="search_text" />
+            <input type="submit" class="search_btn" value="검색" title="검색" />
           </form>
-          </div>
-          <nav class="header_nav">
-            <ul>
-              <li class="menu_item">
-                <a href="./src/html/introduce.html"><div class="menu_header">소개</div></a>
-              </li>
-  
-              <li class="menu_item">
-                <a><div class="menu_header activity">활동</div></a>
-                  <ul class="sub_menu_list activity">
-                    <a href="./src/html/showEvent.html"><li>
-                      리빙랩 모아보기
-                    </li></a>
-                    <a href="./src/html/review.html"><li>
-                     후기
-                    </li></a>
-                    <a href="./src/html/request.html"><li>
-                      리퀘스트
-                    </li></a>
-                  </ul>
-              </li>
-  
-              <li class="menu_item">
-                <a href="./src/html/network.html"><div class="menu_header">네트워크</div></a>
-              </li>
-              <li class="menu_item">
-                <a href="#"><div class="menu_header">카테고리</div></a>
-                <section class="sub_menu_list category">
-                  <p>지역</p>
-                  <ul class="category_region">
-                    <li>
-                      <a>서울</a>
-                    </li>
-                    <li>
-                      <a>인천/경기</a>
-                    </li>
-                    <li>
-                      <a>대전/충청/세종</a>
-                    </li>
-                    <li>
-                      <a>부산/울산/경남</a>
-                    </li>
-                    <li>
-                      <a>광주/전라</a>
-                    </li>
-                    <li>
-                      <a>대구/경북</a>
-                    </li>
-                    <li>
-                      <a>강원</a>
-                    </li>
-                    <li>
-                      <a>제주</a>
-                    </li>
-                    <li>
-                      <a>기타지역</a>
-                    </li>
-                  </ul>
-                 
-                </li>
-                <li class="login">
-                  <a href="./src/html/login.html">로그인</a>
-                </li>
-                </section>
-            </ul> 
-          </nav>
-      </header>
-    <main>
-    <div class="request_area">
-        <div class="reqeust_header">
-            <h1>요구 사항 제안하기</h1>
-            <p>자신이 살고 있는 도시를 더 발전시키고 싶나요?<br>
-                진행 중인 프로젝트에 누군가의 도움이 필요한가요?<br>
-                요구 사항이 있다면 지역 사회에 소문을 퍼뜨리세요!<br>
-                지역 네트워크 구성원들과 함께 생각을 공유해보세요!
-            </p>
-            <button id="request_submit">제안하기</button>
         </div>
-    
-        <div class="request_submenu">
-            <section class="submenu_region">
-                <h2>지역</h2>
-                    <ul>
-                        <li>서울</li>
-                        <li>경기</li>
-                        <li>인천</li>
-                        <li>대전</li>
-                        <li>충청</li>
-                        <li>세종</li>
-                        <li>부산</li>
-                        <li>울산</li>
-                        <li>경남</li>
-                        <li>광주</li>
-                        <li>전라</li>
-                        <li>대구</li>
-                        <li>경북</li>
-                        <li>강원</li>
-                        <li>제주</li>
-                        <li>전국</li>
-                    </ul>                            
-                  </section>
-            <section class="submenu_subject">
-                <h2>주제</h2>
-                <ul>
-                    <li>환경</li>
-                    <li>복지</li>
-                    <li>에너지</li>
-                    <li>기타</li>
+        <nav class="header_nav">
+          <ul>
+            <li class="menu_item">
+              <a href="./introduce.html">
+                <div class="menu_header">소개</div>
+              </a>
+            </li>
+
+            <li class="menu_item">
+              <a>
+                <div class="menu_header activity">활동</div>
+              </a>
+              <ul class="sub_menu_list activity">
+                <a href="./showEvent.html">
+                  <li>
+                    리빙랩 모아보기
+                  </li>
+                </a>
+                <a href="./review.html">
+                  <li>
+                    후기
+                  </li>
+                </a>
+                <a href="./request.html">
+                  <li>
+                    리퀘스트
+                  </li>
+                </a>
+              </ul>
+            </li>
+
+            <li class="menu_item">
+              <a href="./network.html">
+                <div class="menu_header">네트워크</div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="#">
+                <div class="menu_header">카테고리</div>
+              </a>
+              <section class="sub_menu_list category">
+                <p>지역</p>
+                <ul class="category_region">
+                  <li>
+                    <a>서울</a>
+                  </li>
+                  <li>
+                    <a>인천/경기</a>
+                  </li>
+                  <li>
+                    <a>대전/충청/세종</a>
+                  </li>
+                  <li>
+                    <a>부산/울산/경남</a>
+                  </li>
+                  <li>
+                    <a>광주/전라</a>
+                  </li>
+                  <li>
+                    <a>대구/경북</a>
+                  </li>
+                  <li>
+                    <a>강원</a>
+                  </li>
+                  <li>
+                    <a>제주</a>
+                  </li>
+                  <li>
+                    <a>기타지역</a>
+                  </li>
                 </ul>
-              </section>
-      </div>
-      <div class="submenu_down_area"><span class="submenu_down"></span></div>
+
+            </li>
+            <li class="login">
+              <a href="./src/html/login.html">로그인</a>
+            </li>
+            </section>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="request_area">
+        <div class="reqeust_header">
+          <h1>요구 사항 제안하기</h1>
+          <p>자신이 살고 있는 도시를 더 발전시키고 싶나요?<br>
+            진행 중인 프로젝트에 누군가의 도움이 필요한가요?<br>
+            요구 사항이 있다면 지역 사회에 소문을 퍼뜨리세요!<br>
+            지역 네트워크 구성원들과 함께 생각을 공유해보세요!
+          </p>
+          <button id="request_submit">제안하기</button>
+        </div>
+
+        <div class="request_submenu">
+          <section class="submenu_region">
+            <h2>지역</h2>
+            <ul>
+              <li>서울</li>
+              <li>경기</li>
+              <li>인천</li>
+              <li>대전</li>
+              <li>충청</li>
+              <li>세종</li>
+              <li>부산</li>
+              <li>울산</li>
+              <li>경남</li>
+              <li>광주</li>
+              <li>전라</li>
+              <li>대구</li>
+              <li>경북</li>
+              <li>강원</li>
+              <li>제주</li>
+              <li>전국</li>
+            </ul>
+          </section>
+          <section class="submenu_subject">
+            <h2>주제</h2>
+            <ul>
+              <li>환경</li>
+              <li>복지</li>
+              <li>에너지</li>
+              <li>기타</li>
+            </ul>
+          </section>
+        </div>
+        <div class="submenu_down_area"><span class="submenu_down"></span></div>
         <div class="request_contents">
           <div class="request_contents_layout">
             <div class="request_contents_layout_header">
               <div class="tag environment_tag">
-                환경  
+                환경
               </div>
               <div class="tag region_tag">
                 서울
@@ -156,7 +172,7 @@
           <div class="request_contents_layout">
             <div class="request_contents_layout_header">
               <div class="tag environment_tag">
-                환경  
+                환경
               </div>
               <div class="tag region_tag">
                 서울
@@ -172,15 +188,15 @@
               </p>
             </div>
           </div>
-          
+
         </div>
-    </div>
-  </main>
+      </div>
+    </main>
     <footer>
       creater / partner / developer
     </footer>
     <script type="text/javascript" src="../js/request.js"></script>
   </div>
-  </body>
+</body>
+
 </html>
- 

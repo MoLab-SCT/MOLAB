@@ -108,7 +108,7 @@
 .form {
   width: 800px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 40px;
   background-color: white;
 }
 
@@ -126,10 +126,10 @@
 #project_title,
 #project_founder,
 #project_intro {
-  width: 500px;
+  width: 800px;
   height: 30px;
 }
 
 #project_detail_info {
-  width: 500px;
+  width: 800px;
 }
