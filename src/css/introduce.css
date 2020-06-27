@@ -79,7 +79,7 @@
   padding: 30px 130px 30px 130px;
 }
 
-input[type="button"] {
+.register_btn {
   width: 100px;
   background-color: #041020;
   border: none;
@@ -91,4 +91,45 @@ input[type="button"] {
   font-size: 15px;
   margin: 4px;
   cursor: pointer;
+}
+
+.form_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form {
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.form h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.form .close {
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+#project_title,
+#project_founder,
+#project_intro {
+  width: 500px;
+  height: 30px;
+}
+
+#project_detail_info {
+  width: 500px;
 }
