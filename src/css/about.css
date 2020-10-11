@@ -1,0 +1,86 @@
+
+.header_top_2 ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+  
+.header_top_2 ul li{
+    display: inline;
+    padding: 20px 20px 20px 20px;
+    margin: 5px 100px 5px 100px;
+  
+}
+
+
+.definition .livinglab_img{
+    float: left;
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-top: 20px;
+    padding-right: 20px;
+    clear: both;
+}
+.definition .livinglab_defi h2{
+    margin-top: 20px;
+    padding-top: 30px;
+    margin-left: 80px;
+}
+
+.livinglab_example img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 25px;
+    width: 350px;
+    height: 250px;
+}
+
+
+
+.livinglab_example h3{
+    margin-left: 80px;
+}
+  
+.livinglab_example img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+  
+
+/*
+.livinglab_exampxle img::after{
+    clear: both;
+}
+
+.livinglab_exampxle h3{
+    padding-right: 40px;
+    margin-right: 80px;
+}
+*/
+
+.livinglab_pros h1{
+   text-align: center;
+   
+}
+
+.livinglab_pros {
+    margin-top: 20px;
+    padding-top: 20px;
+    clear: both;
+}
+.livinglab_pros h3{
+    text-decoration-color: white;
+    margin-left: 80px;
+}
+
+
+.parenthesis::before {
+    left: 0;
+    border-left: 2px solid #555;
+    border-radius: 8px 0 0 8px;
+}
+.parenthesis::after {
+    right: 0;
+    border-right: 2px solid #555;
+    border-radius: 0 8px 8px 0;
+}
+
